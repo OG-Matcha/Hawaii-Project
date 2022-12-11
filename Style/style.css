@@ -104,11 +104,20 @@ main section.second section.cards div.card {
   padding: 1rem;
   flex: 1 1 300px;
 }
-main section.second section.cards div.card img {
-  margin: 1rem 0rem;
+main section.second section.cards div.card div.image-container {
+  overflow: hidden;
   width: 15vw;
   height: 15vw;
   border-radius: 50%;
+}
+main section.second section.cards div.card div.image-container img {
+  width: 15vw;
+  height: 15vw;
+  border-radius: 50%;
+  transition: all 0.2s ease;
+}
+main section.second section.cards div.card div.image-container img:hover {
+  transform: scale(1.2);
 }
 main section.second section.cards div.card h4 {
   font-size: 2rem;
